@@ -50,3 +50,5 @@ coverage/
 .yarn/plugnplay
 .yarn/unplugged
 .pnp.*
+
+temp/
