@@ -10,10 +10,11 @@ pnpm-debug.log
 *.d.ts
 
 # If you have specific build output directories:
-# build/
-# dist/
-# out/
-# lib/
+build/
+dist/
+out/
+lib/
+.cdk.out/
 
 # Logs
 logs

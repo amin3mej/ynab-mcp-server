@@ -1,23 +1,20 @@
 {
-  "compilerOptions": {
-    "rootDir": "./src",
-    "sourceMap": true,
-    "target": "es2024",
-    "types": ["bun-types"],
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "baseUrl": ".",
-    "noFallthroughCasesInSwitch": true,
-    "outDir": "./dist"
-  },
-  "compileOnSave": true,
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
-} 
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "CommonJS",
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		},
+		"moduleResolution": "Node",
+		"outDir": "dist",
+		"importsNotUsedAsValues": "remove",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"types": ["vitest/globals"]
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules"]
+}
